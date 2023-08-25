@@ -1,0 +1,73 @@
+header{
+    >nav{
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        padding: 10px 0 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        >a>img{
+            width: 200px;
+            // background-image: url("https://www.pbcafe.com.tw/wp-content/uploads/2022/05/menu-logo-0%EF%BC%92-02.png");
+        }
+        
+        .nav_left{
+            
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 5%;
+            top: 14%;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+            >li{
+                margin-right: 10px;
+                width: 80px;
+                >a{
+                    color: #001D35;
+                }
+            }
+        }
+        .nav_right{
+            list-style-type: none;
+            display: flex;
+            // align-items: center;
+            position: absolute;
+            right: 40px;
+            top: 3%;
+            >li{
+                margin-right: 10px;
+                >a{
+                    color: #001D35;
+                }
+            }
+        }
+        
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 70%;
+        height: 700px;
+        object-fit: cover;
+    }
+
+
+}
+
