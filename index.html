@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coffee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <div style="width: 100%; height: 50px; background-color: brown;"></div>
+        <div style="width: 100%; height: 35px; background-color: brown;"></div>
         <nav>
-            <a href="index.html"></a>
+            <a href="/index.html"><img src="https://www.pbcafe.com.tw/wp-content/uploads/2022/05/menu-logo-0%EF%BC%92-02.png" alt=""></a>
             <ul class="nav_left">
                 <li><a href="#">所有商品</a></li>
                 <li><a href="#">門市菜單</a></li>
@@ -19,16 +20,47 @@
                 <li><a href="#">關於品牌</a></li>
             </ul>
             <ul class="nav_right">
-                <li><a href="#"><img src="">搜尋</a></li>
-                <li><a href="#"><img src="">個人中心</a></li>
-                <li><a href="#"><img src="">購物車</a></li>
+                <li><a title="搜尋" href="#"><img width="32" height="32" src="https://img.icons8.com/fluency-systems-regular/48/search--v1.png"/></a></li>
+                <li><a title="會員中心" href="#"><img width="32" height="32" src="https://img.icons8.com/windows/32/gender-neutral-user.png"/></a></li>
+                <li><a title="購物車" href="#"><img width="32" height="32" src="https://img.icons8.com/windows/32/shopping-cart.png"/></a></li>
             </ul>
             <div>
-
+                <!-- ham -->
             </div>
         </nav>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=1" /></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=2" /></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=3" /></div>
+              <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=4" /></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+
     </header>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
 </body>
 </html>
 
