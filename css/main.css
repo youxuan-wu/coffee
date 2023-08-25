@@ -59,4 +59,9 @@ header .swiper-slide img {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+main .box {
+  display: flex;
+  margin: 70px;
 }/*# sourceMappingURL=main.css.map */
