@@ -27,15 +27,21 @@ main{
         // width: 100%;
         display: flex;
         margin: 80px 50px 80px 80px;
-        >a{
-            // justify-content: center;
-            // align-items: center;
-            padding: 0 0 0 50px;
+        .photo{
+            >a{
+                // justify-content: center;
+                // align-items: center;
+                padding: 0 0 0 50px;
+                >img{
+                    width: 75%;
+                    height: 600px;
+                    // margin: 0 25%;
+                }
+            }
         }
-        >a>img{
-            width: 75%;
-            height: 600px;
-            // margin: 0 25%;
-        }
+        
+
     }
+
+    
 }
