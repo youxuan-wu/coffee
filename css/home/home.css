@@ -28,9 +28,25 @@ header > nav .bottom .nav_left {
 }
 header > nav .bottom .nav_left > li {
   margin-right: 30px;
+  display: inline-block;
 }
 header > nav .bottom .nav_left > li > a {
   color: #001D35;
+  text-decoration: none;
+}
+header > nav .bottom .nav_left > li > ul {
+  position: absolute;
+  list-style-type: none;
+}
+header > nav .bottom .nav_left > li > ul :hover {
+  background-color: #fff;
+}
+header > nav .bottom .nav_left > li > ul > li {
+  background-color: beige;
+  padding: 10px;
+}
+header > nav .bottom .nav_left > li > ul > li > a {
+  color: black;
   text-decoration: none;
 }
 header > nav .bottom .nav_right {

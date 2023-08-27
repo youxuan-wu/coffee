@@ -33,13 +33,39 @@ header{
                 top: 14%;
                 transform: translate(-50%, -50%);
                 text-decoration: none;
+
                 >li{
                     margin-right: 30px;
+                    display: inline-block;
+                    
                     >a{
                         color: #001D35;
                         text-decoration: none;  //消底線
                     }
+                    >ul{
+                        
+                        position: absolute;
+                        list-style-type: none;
+                        :hover{
+                            background-color: #fff;
+                        }
+                        >li{
+                            background-color: beige;
+                            padding: 10px;
+                            
+                            >a{
+                            color: black;
+                            text-decoration: none;
+                            }
+                        }
+                        // .item{
+                        //     list-style-type: none;
+                        //     margin: 0;
+                        //     padding: 0;
+                        // }
+                    }
                 }
+                
             }
             .nav_right{
                 list-style-type: none;
