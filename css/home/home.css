@@ -50,6 +50,9 @@ body header > nav .bottom .nav_left .good .menu {
 body header > nav .bottom .nav_left .good .menu li {
   padding: 10px;
 }
+body header > nav .bottom .nav_left .good .menu li:hover {
+  background-color: #FFFEF9;
+}
 body header > nav .bottom .nav_right {
   list-style-type: none;
   display: flex;

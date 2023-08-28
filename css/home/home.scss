@@ -60,7 +60,11 @@ body {
                             background-color: beige;
                             li {
                                 padding: 10px;
+                                &:hover{
+                                    background-color: #FFFEF9;
+                                }
                             }
+                            
                         }
                     }
 

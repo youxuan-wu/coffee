@@ -60,6 +60,9 @@ body {
                             background-color: beige;
                             li {
                                 padding: 10px;
+                                &:hover{
+                                    background-color: #FFFEF9;
+                                }
                             }
                         }
                     }
@@ -110,3 +113,48 @@ footer{
     }
 }
 
+main{
+    .banner{
+        width: 100%;
+        height: 400px;
+        >img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* 將圖片放大以填滿容器，保持寬高比 */
+            opacity: 0.9;
+        }  
+    }
+    >p{
+        width: 40%;
+        margin-top: 2%;
+        margin-left: 30%;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #001D35;
+        border: 5px solid white;
+        background-color:white;
+        box-shadow: 0px 5px 5px antiquewhite;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .coffee_card1{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 100px 0;
+        >img{
+            box-shadow: 3px 5px 5px #001D35;
+        }
+        
+    }
+    .coffee_card2{
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        margin: 50px 10% 100px 10%;
+        >img{
+            box-shadow: 3px 5px 5px #001D35;
+            object-fit: cover;  /* 將圖片放大以填滿容器，保持寬高比 */
+        }
+        
+    }
+}
