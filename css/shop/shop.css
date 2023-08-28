@@ -107,7 +107,7 @@ main .place > div {
   display: flex;
   justify-content: center;
 }
-main .place > div > p {
+main .place > div > button {
   color: #001D35;
   background-color: #FFC7C7;
   display: flex;
