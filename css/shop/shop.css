@@ -131,6 +131,7 @@ main .place .address > div {
   border-radius: 10px;
 }
 main .place .address > div > div {
+  margin: 15px 0;
   display: flex;
   justify-content: center;
   font-weight: bold;

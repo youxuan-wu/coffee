@@ -157,6 +157,7 @@ main{
                 padding: 15px;
                 border-radius: 10px;
                 >div{
+                    margin: 15px 0;
                     display: flex;
                     justify-content: center;
                     font-weight: bold;
@@ -178,5 +179,11 @@ main{
                 }
             }
         }
+        // .ntp{
+        //     display: block;
+        // }
+        // .tp, .ty{
+        //     display: none;
+        // }
     }
 }
