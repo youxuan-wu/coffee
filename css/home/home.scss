@@ -1,4 +1,5 @@
 body {
+    background-color: #FFFEF9;
 
     ul,
     ol {
@@ -8,7 +9,7 @@ body {
     }
     a {
         text-decoration: none;
-        color: #000;
+        color: #001D35;
     }
 
     header {
@@ -25,7 +26,7 @@ body {
                 width: 100%;
                 height: 50px;
                 background-color: white;
-                padding: 10px 0 10px 15px;
+                padding: 10px 0 10px 25px;
                 display: flex;
                 justify-content: space-between;
                 // position: fixed;
@@ -71,7 +72,7 @@ body {
                     // align-items: center;
                     position: absolute;
                     right: 25px;
-                    top: 5%;
+                    top: 7%;
 
                     >li {
                         margin-right: 10px;
@@ -83,6 +84,15 @@ body {
                 }
             }
         }
+    }
+}
+
+main{
+    .contect>p{
+        color: #001D35;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -128,18 +138,30 @@ header{
 
 main{
     .box{
-        // width: 100%;
+        width: 100%;
         display: flex;
-        margin: 80px 50px 80px 80px;
+        margin: 80px 25px;
         .photo{
+            width: 25%;
             >a{
-                // justify-content: center;
-                // align-items: center;
                 padding: 0 0 0 50px;
                 >img{
                     width: 75%;
                     height: 600px;
-                    // margin: 0 25%;
+                    position: relative;
+                    object-fit: cover;  /* 將圖片放大以填滿容器，保持寬高比 */
+                    overflow: hidden;
+                    
+
+                    // &::before{               //照片蓋黑色
+                    //     content: "";
+                    //     position: absolute;
+                    //     top: 0;
+                    //     left: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明遮罩 */
+                    // }
                 }
             }
         }

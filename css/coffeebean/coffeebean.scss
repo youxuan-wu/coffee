@@ -1,4 +1,5 @@
 body {
+    background-color: #FFFEF9;
 
     ul,
     ol {
@@ -8,7 +9,7 @@ body {
     }
     a {
         text-decoration: none;
-        color: #000;
+        color: #001D35;
     }
 
     header {
@@ -25,7 +26,7 @@ body {
                 width: 100%;
                 height: 50px;
                 background-color: white;
-                padding: 10px 0 10px 15px;
+                padding: 10px 0 10px 25px;
                 display: flex;
                 justify-content: space-between;
                 // position: fixed;
@@ -71,7 +72,7 @@ body {
                     // align-items: center;
                     position: absolute;
                     right: 25px;
-                    top: 5%;
+                    top: 7%;
 
                     >li {
                         margin-right: 10px;
@@ -86,6 +87,14 @@ body {
     }
 }
 
+main{
+    .contect>p{
+        color: #001D35;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
 
 footer{
     .foot{
@@ -100,3 +109,4 @@ footer{
         }
     }
 }
+
