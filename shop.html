@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/shop/shop.css">
-    <script src="js/shop.js" async></script>
+    <script src="js/shop.js"></script>
 </head>
 <body>
     <header>
@@ -50,16 +50,16 @@
     <main>
         <div class="banner">
             <img src="https://fastly.picsum.photos/id/315/1282/854.jpg?hmac=peQWwF72d5mtE-IDLsZMkWZLQZxzv6bu7O4NXGeiNh4" alt="">
-            <!-- <img src="https://fastly.picsum.photos/id/631/1282/854.jpg?hmac=5ZEKRW-xNZlY-lBy5FeTzQRbFN9HwnhM0H9nx4fGLos" alt=""> -->
-            <!-- <img src="https://fastly.picsum.photos/id/147/1282/854.jpg?hmac=H8x5N4HAREnlhSIlekhlkiNI5vYXXPzL53s5lbJJKsE" alt=""> -->
+            <img src="https://fastly.picsum.photos/id/631/1282/854.jpg?hmac=5ZEKRW-xNZlY-lBy5FeTzQRbFN9HwnhM0H9nx4fGLos" alt="">
+            <img src="https://fastly.picsum.photos/id/147/1282/854.jpg?hmac=H8x5N4HAREnlhSIlekhlkiNI5vYXXPzL53s5lbJJKsE" alt="">
         </div>
         <h2>門市查詢</h2>
         <hr style="width: 40%;">
         <div class="place">
             <div>
-                <button>新北市門市</button>
-                <button>台北市門市</button>
-                <button>桃園門市</button>
+                <p data-city="ntp">新北市門市</p>
+                <p data-city="tp">台北市門市</p>
+                <p data-city="ty">桃園門市</p>
             </div>
             <div class="address ntp">
                 <div>
@@ -70,7 +70,7 @@
                         平日 7:30~17:00 <br>
                         假日 7:30~17:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/Z1fJej1d9honjRY76" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>三重三和門市</div>
@@ -80,7 +80,7 @@
                         平日 7:00~17:00 <br>
                         假日 8:00~17:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/XCsHosJEDBkAYWra8" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>中和遠東門市</div>
@@ -90,7 +90,7 @@
                         平日 7:30~17:30 <br>
                         例假日 店休
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/j1cyuWv2ccS4nREJA" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>新莊幸福門市</div>
@@ -100,7 +100,7 @@
                         平日 7:00~19:30 <br>
                         假日 7:00~19:30
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/geuatVHQTcfmEzf69" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>板橋南雅門市</div>
@@ -110,7 +110,7 @@
                         週一至週六 7:00~18:30<br>
                         週日 8:00~18:30
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/DKkDU3wdRija7kc36" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>板橋文化門市</div>
@@ -119,7 +119,7 @@
                         (02) 2255-0673 <br>
                         週一至週日 7:30-19:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/d63ULQmvXMhSkM7L7" target="_blank">Google Map</a></div>
                 </div>
             </div>
             <div class="address tp">
@@ -131,7 +131,7 @@
                         平日 7:00~17:30 <br>
                         假日 8:00~17:30
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/oi1tmRnZqPQz5MuM9" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>古亭門市</div>
@@ -142,7 +142,7 @@
                         平日 7:00~17:45 <br>
                         假日 7:30~17:45
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/SLASebH4x59Wkdyz5" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>信義大安門市</div>
@@ -152,7 +152,7 @@
                         平日 7:00~17:00 <br>
                         假日 7:00~17:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/vqacPbGnsryzxHm99" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>三創門市</div>
@@ -162,7 +162,7 @@
                         平日 8:00~18:30 <br>
                         假日 09:00~18:30
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/8RGTE9fU6CKK1TY38" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>南門門市</div>
@@ -172,7 +172,7 @@
                         平日 7:15~17:00<br>
                         假日 7:15~17:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/uHA2CVk1A2ET7HAy5" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>民權中山門市</div>
@@ -182,7 +182,7 @@
                         週一至週六 7:00-21:00<br>
                         週日 7:00-18:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/FRJEKeXihVQtVT2n7" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>民生雙連門市</div>
@@ -192,7 +192,7 @@
                         平日 7:00~17:00<br>
                         假日 7:30~17:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/RWYkwDykLUpDP2Ke7" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>市府松菸門市</div>
@@ -202,7 +202,7 @@
                         平日 7:30~16:00<br>
                         假日 8:00~16:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/2Hu31vAoCXb8p7G16" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>信義世貿門市</div>
@@ -212,7 +212,7 @@
                         假日 8:00~15:00 <br>
                         (02) 2732-5200
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/bE4AM9STzWNYfMDj6" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>內湖行善門市</div>
@@ -222,7 +222,7 @@
                         平日 7:00~16:00<br>
                         假日 8:00~16:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/z494Tx1mD3eVdFn5A" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>內科洲子門市</div>
@@ -232,7 +232,7 @@
                         平日 07:00~16:00<br>
                         假日 08:00~17:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/aYWxLK2HgcUwmqpD7" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>敦南門市</div>
@@ -242,7 +242,7 @@
                         平日 7:30-18:00<br>
                         假日8:30-16:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/W6C3FbZzmTEfrDpx6" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>金門街門市</div>
@@ -252,7 +252,7 @@
                         平日 07:30~18:00<br>
                         假日 07:30~18:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/s82CALmLpeQFR8Zn7" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>台大醫院門市</div>
@@ -262,7 +262,7 @@
                         平日 06:30~20:00<br>
                         假日 06:30~20:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/N5qyxyu78kugurQs5" target="_blank">Google Map</a></div>
                 </div>
                 <div>
                     <div>東門永康門市</div>
@@ -273,12 +273,8 @@
                         平日 07:00~21:00<br>
                         假日 07:00~18:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/HFp6ovhw4MHXfqNcA" target="_blank">Google Map</a></div>
                 </div>
-
-
-
-
             </div>
             <div class="address ty">
                 <div>
@@ -288,7 +284,7 @@
                         (03)353-0779 <br>
                         週一至週日07:00-19:00
                     </p>
-                    <div class="map"><a href="">Google Map</a></div>
+                    <div class="map"><a href="https://goo.gl/maps/bHVb3NnfDH7MgyKg9" target="_blank">Google Map</a></div>
                 </div>
             </div>
         </div>

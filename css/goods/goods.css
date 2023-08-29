@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #FFFEF9;
 }
@@ -83,4 +84,70 @@ footer .foot {
 footer .foot > center > p {
   margin: 0;
   justify-content: center;
+}
+
+main > h2 {
+  color: #001D35;
+  display: flex;
+  justify-content: center;
+}
+main .item > div {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+main .item > div > p {
+  color: #001D35;
+  background-color: #FFC7C7;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  padding: 7px;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+main .item > div > p:hover {
+  cursor: pointer;
+}
+main .item .commodity {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 1%;
+  margin: 20px 10%;
+}
+main .item .commodity > div {
+  width: 75%;
+  height: auto;
+  border: 1px solid #8C1E1E;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* 将内部元素纵向排列 */
+}
+main .item .commodity > div > div {
+  padding: 10px;
+}
+main .item .commodity > div > div > img {
+  width: 100%;
+  height: auto;
+  margin-right: 5px;
+}
+main .item .commodity > div .pale {
+  color: #647988;
+  font-size: 12px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+main .item .commodity > div > p {
+  color: #001D35;
+  font-size: 14px;
+  margin: 10px;
+  text-align: center;
+}
+main .item .commodity .empty {
+  flex-basis: 100%;
+  margin: 0;
+  border: none;
 }/*# sourceMappingURL=goods.css.map */

@@ -112,3 +112,75 @@ footer{
         }
     }
 }
+
+main{
+    >h2{
+        color: #001D35;
+        display: flex;
+        justify-content: center;
+    }
+
+    .item{
+        >div{
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            >p{
+                color: #001D35;
+                background-color: #FFC7C7;
+                display: flex;
+                justify-content: center;
+                width: 15%;
+                padding: 7px;
+                margin: 20px;
+                font-size: 16px;
+                font-weight: bold;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .commodity{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(0, 1fr);
+            gap: 1%;
+            margin: 20px 10%;
+            >div{
+                width: 75%;
+                height: auto;
+                border: 1px solid #8C1E1E;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column; /* 将内部元素纵向排列 */
+                >div{
+                    padding: 10px;
+                    >img{
+                        width: 100%;
+                        height: auto;
+                        margin-right: 5px;
+                    }
+                }
+                .pale{
+                    color: #647988;
+                    font-size: 12px;
+                    margin: 10px;
+                    display: flex;
+                    justify-content: center;
+                }
+                >p{
+                    color: #001D35;
+                    font-size: 14px;
+                    margin: 10px;
+                    text-align: center;
+                }
+            }
+            .empty{
+                flex-basis: 100%;
+                margin: 0;
+                border: none;
+            }
+        }
+        
+    }
+}
