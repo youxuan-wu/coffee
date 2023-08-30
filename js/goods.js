@@ -1,14 +1,14 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const cityNames = document.querySelectorAll(".place p[data-city]");
-//     const addressSections = document.querySelectorAll(".place .address");
+document.addEventListener("DOMContentLoaded", function() {
+    const commodityNames = document.querySelectorAll(".item p[data-commodity]");
+    const commoditySections = document.querySelectorAll(".item .commodity");
 
-//     cityNames.forEach(cityName => {
-//         cityName.addEventListener("click", function() {
-//             const city = this.getAttribute("data-city");
-//             addressSections.forEach(section => {
-//                 section.style.display = "none";
-//             });
-//             document.querySelector(`.place .address.${city}`).style.display = "block";
-//         });
-//     });
-// });
+    commodityNames.forEach(commodityName => {
+        commodityName.addEventListener("click", function() {
+            const commodity = this.getAttribute("data-commodity");
+            commoditySections.forEach(section => {
+                section.style.display = "none";
+            });
+            document.querySelector(`.item .commodity.${commodity}`).style.display = "grid";
+        });
+    });
+});
