@@ -34,7 +34,7 @@ body header > nav .bottom .nav_left {
   display: flex;
   flex-direction: row;
   margin: 1%;
-  width: 40%;
+  width: 60%;
 }
 body header > nav .bottom .nav_left .good:hover .menu {
   display: block;
@@ -66,6 +66,43 @@ body header > nav .bottom .nav_right > li {
 }
 body header > nav .bottom .nav_right > li > a {
   color: #001D35;
+}
+body header > nav .bottom .nav_right > div > ol {
+  list-style: none;
+  padding-left: 0;
+}
+body header > nav .bottom .nav_right > div > ol > li > a {
+  text-decoration: none;
+}
+body header > nav .bottom .nav_right > div > input {
+  display: none;
+}
+body header > nav .bottom .nav_right > div > input::checked ~ .menu {
+  max-height: 300px;
+}
+body header > nav .bottom .nav_right > div > label {
+  padding-right: 50px;
+  line-height: 50px;
+}
+body header > nav .bottom .nav_right > div .menu1 {
+  clear: both;
+  background: beige;
+  max-height: 0;
+  overflow: hidden;
+}
+body header > nav .bottom .nav_right > div .menu1 li {
+  text-align: center;
+  border-bottom: 1px solid #efefef;
+}
+body header > nav .bottom .nav_right > div .menu1 li a {
+  display: block;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #000;
+}
+body header > nav .bottom .nav_right > div .menu1 li a:hover {
+  background: #FFFEF9;
+  color: #000;
 }
 
 main .contect > p {
