@@ -43,6 +43,7 @@ body {
                     display: flex;
                     flex-direction: row;
                     margin: 1%;
+                    width: 40%;
 
                     .good {
                         &:hover {
@@ -77,6 +78,7 @@ body {
                     position: absolute;
                     right: 25px;
                     top: 7%;
+                    // width: 10%;
 
                     >li {
                         margin-right: 10px;
@@ -145,8 +147,12 @@ main{
         width: 100%;
         display: flex;
         margin: 80px 25px;
+        // justify-content: space-between;
+        // align-items: flex-start;
         .photo{
             width: 25%;
+            position: relative;
+            flex: 1;
             >a{
                 padding: 0 0 0 50px;
                 >img{
@@ -156,7 +162,6 @@ main{
                     object-fit: cover;  /* 將圖片放大以填滿容器，保持寬高比 */
                     overflow: hidden;
                     
-
                     // &::before{               //照片蓋黑色
                     //     content: "";
                     //     position: absolute;
@@ -167,6 +172,22 @@ main{
                     //     background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明遮罩 */
                     // }
                 }
+            }
+            .caption {
+                position: absolute;
+                top: 40%;
+                left: 50px;
+                width: 75%;
+                height: 50px;
+                background-color: rgba(217, 213, 213, 0.6);
+                // text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 20px 0;
+                font-size: 20px;
+                font-weight: bold;
+                color: #001D35;
             }
         }
         

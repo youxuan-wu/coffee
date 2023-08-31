@@ -34,6 +34,7 @@ body header > nav .bottom .nav_left {
   display: flex;
   flex-direction: row;
   margin: 1%;
+  width: 40%;
 }
 body header > nav .bottom .nav_left .good:hover .menu {
   display: block;
@@ -114,6 +115,8 @@ main .box {
 }
 main .box .photo {
   width: 25%;
+  position: relative;
+  flex: 1;
 }
 main .box .photo > a {
   padding: 0 0 0 50px;
@@ -125,4 +128,19 @@ main .box .photo > a > img {
   -o-object-fit: cover;
      object-fit: cover; /* 將圖片放大以填滿容器，保持寬高比 */
   overflow: hidden;
+}
+main .box .photo .caption {
+  position: absolute;
+  top: 40%;
+  left: 50px;
+  width: 75%;
+  height: 50px;
+  background-color: rgba(217, 213, 213, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #001D35;
 }/*# sourceMappingURL=home.css.map */
