@@ -43,6 +43,7 @@ body header > nav .bottom .nav_left .good a {
   margin-right: 20px;
 }
 body header > nav .bottom .nav_left .good .menu {
+  margin-top: 10px;
   z-index: 2;
   position: relative;
   display: none;
@@ -67,6 +68,9 @@ body header > nav .bottom .nav_right > li {
 body header > nav .bottom .nav_right > li > a {
   color: #001D35;
 }
+body header > nav .bottom .nav_right > div {
+  display: none;
+}
 body header > nav .bottom .nav_right > div > ol {
   list-style: none;
   padding-left: 0;
@@ -83,12 +87,15 @@ body header > nav .bottom .nav_right > div > input::checked ~ .menu {
 body header > nav .bottom .nav_right > div > label {
   padding-right: 50px;
   line-height: 50px;
+  cursor: pointer;
+}
+body header > nav .bottom .nav_right > div #burger:checked + .menu1 {
+  display: block;
 }
 body header > nav .bottom .nav_right > div .menu1 {
   clear: both;
   background: beige;
-  max-height: 0;
-  overflow: hidden;
+  display: none;
 }
 body header > nav .bottom .nav_right > div .menu1 li {
   text-align: center;
@@ -124,7 +131,33 @@ footer .foot > center > p {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  body header > nav .top {
+    width: 106%;
+  }
+  body header > nav .bottom > a > img {
+    width: 150px;
+    margin-top: 5px;
+  }
+  body header > nav .bottom .nav_left {
+    display: none;
+  }
+  body header > nav .bottom .nav_right {
+    right: -35px;
+  }
+  body header > nav .bottom .nav_right > div {
+    display: block;
+  }
+  body header > nav .bottom .nav_right > div > label {
+    display: flex;
+  }
+  main .contect {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .swiper {
+  z-index: -1;
   width: 100%;
   height: 100%;
   margin-top: 70px;
@@ -180,4 +213,45 @@ main .box .photo .caption {
   font-size: 20px;
   font-weight: bold;
   color: #001D35;
+}
+
+@media (max-width: 768px) {
+  header .swiper {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+  }
+  header .swiper-slide img {
+    display: block;
+    width: 70%;
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    align-items: center;
+  }
+  main .box {
+    width: 100%;
+    height: 200px;
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  main .box .photo {
+    width: 100%;
+    position: relative;
+    flex: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .box .photo > a {
+    padding: 0 0 0 50px;
+  }
+  main .box .photo > a > img {
+    width: 75%;
+    height: 120px;
+    position: relative;
+    -o-object-fit: cover;
+       object-fit: cover; /* 將圖片放大以填滿容器，保持寬高比 */
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=home.css.map */
