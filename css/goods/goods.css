@@ -68,9 +68,6 @@ body header > nav .bottom .nav_right > li {
 body header > nav .bottom .nav_right > li > a {
   color: #001D35;
 }
-body header > nav .bottom .nav_right > div {
-  display: none;
-}
 body header > nav .bottom .nav_right > div > ol {
   list-style: none;
   padding-left: 0;
@@ -98,13 +95,13 @@ body header > nav .bottom .nav_right > div .menu1 {
   display: none;
 }
 body header > nav .bottom .nav_right > div .menu1 li {
-  text-align: center;
+  padding: 5px;
   border-bottom: 1px solid #efefef;
 }
 body header > nav .bottom .nav_right > div .menu1 li a {
   display: block;
   padding: 10px 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
 }
 body header > nav .bottom .nav_right > div .menu1 li a:hover {
