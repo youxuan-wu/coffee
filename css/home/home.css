@@ -68,6 +68,10 @@ body header > nav .bottom .nav_right > li {
 body header > nav .bottom .nav_right > li > a {
   color: #001D35;
 }
+body header > nav .bottom .nav_right > li > a > img {
+  width: 32px;
+  height: 32px;
+}
 body header > nav .bottom .nav_right > div > ol {
   list-style: none;
   padding-left: 0;
@@ -123,9 +127,17 @@ footer .foot {
   height: auto;
   padding: 10px;
 }
-footer .foot > center > p {
+footer .foot > center {
   margin: 0;
   justify-content: center;
+}
+footer .foot > center .p1 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+footer .foot > center .p2 {
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
@@ -142,15 +154,34 @@ footer .foot > center > p {
   body header > nav .bottom .nav_right {
     right: -35px;
   }
+  body header > nav .bottom .nav_right > li > a > img {
+    width: 26px;
+    height: 26px;
+  }
   body header > nav .bottom .nav_right > div {
     display: block;
   }
   body header > nav .bottom .nav_right > div > label {
     display: flex;
   }
+  body header > nav .bottom .nav_right > div > label > img {
+    width: 26px;
+    height: 26px;
+  }
   main .contect {
+    font-size: 12px;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
+  }
+  main .contect > p {
+    margin: 0 0;
+  }
+  footer .foot > center .p1 {
+    font-size: 14px;
+  }
+  footer .foot > center .p2 {
+    font-size: 12px;
   }
 }
 header .swiper {
@@ -229,9 +260,9 @@ main .box .photo .caption {
   }
   main .box {
     width: 100%;
-    height: 200px;
+    height: auto;
     flex-direction: column;
-    margin: 40px 0;
+    margin: 40px 0 20px 0;
   }
   main .box .photo {
     width: 100%;
@@ -239,6 +270,8 @@ main .box .photo .caption {
     flex: 1;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-bottom: 10px;
+    justify-items: center;
   }
   main .box .photo > a {
     padding: 0 0 0 50px;
@@ -250,5 +283,10 @@ main .box .photo .caption {
     -o-object-fit: cover;
        object-fit: cover; /* 將圖片放大以填滿容器，保持寬高比 */
     overflow: hidden;
+  }
+  main .box .photo .caption {
+    font-size: 16px;
+    top: 50%;
+    height: 40px;
   }
 }/*# sourceMappingURL=home.css.map */
