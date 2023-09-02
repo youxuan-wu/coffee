@@ -177,6 +177,9 @@ footer .foot > center .p2 {
   main .contect > p {
     margin: 0 0;
   }
+  footer .foot {
+    height: auto;
+  }
   footer .foot > center .p1 {
     font-size: 14px;
   }

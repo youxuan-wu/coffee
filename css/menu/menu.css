@@ -68,6 +68,10 @@ body header > nav .bottom .nav_right > li {
 body header > nav .bottom .nav_right > li > a {
   color: #001D35;
 }
+body header > nav .bottom .nav_right > li > a > img {
+  width: 32px;
+  height: 32px;
+}
 body header > nav .bottom .nav_right > div > ol {
   list-style: none;
   padding-left: 0;
@@ -123,9 +127,17 @@ footer .foot {
   height: auto;
   padding: 10px;
 }
-footer .foot > center > p {
+footer .foot > center {
   margin: 0;
   justify-content: center;
+}
+footer .foot > center .p1 {
+  font-size: 20px;
+  margin: 5px 0;
+}
+footer .foot > center .p2 {
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
@@ -142,15 +154,37 @@ footer .foot > center > p {
   body header > nav .bottom .nav_right {
     right: -35px;
   }
+  body header > nav .bottom .nav_right > li > a > img {
+    width: 26px;
+    height: 26px;
+  }
   body header > nav .bottom .nav_right > div {
     display: block;
   }
   body header > nav .bottom .nav_right > div > label {
     display: flex;
   }
+  body header > nav .bottom .nav_right > div > label > img {
+    width: 26px;
+    height: 26px;
+  }
   main .contect {
+    font-size: 12px;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
+  }
+  main .contect > p {
+    margin: 0 0;
+  }
+  footer .foot {
+    height: auto;
+  }
+  footer .foot > center .p1 {
+    font-size: 14px;
+  }
+  footer .foot > center .p2 {
+    font-size: 12px;
   }
 }
 main .menu_banner {
