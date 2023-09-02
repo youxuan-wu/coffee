@@ -35,6 +35,7 @@ body header > nav .bottom .nav_left {
   flex-direction: row;
   margin: 1%;
   width: 60%;
+  position: relative;
 }
 body header > nav .bottom .nav_left .good:hover .menu {
   display: block;
@@ -43,9 +44,9 @@ body header > nav .bottom .nav_left .good a {
   margin-right: 20px;
 }
 body header > nav .bottom .nav_left .good .menu {
-  margin-top: 10px;
+  margin-top: 5px;
   z-index: 2;
-  position: relative;
+  position: absolute;
   display: none;
   background-color: beige;
 }
@@ -58,7 +59,7 @@ body header > nav .bottom .nav_left .good .menu li:hover {
 body header > nav .bottom .nav_right {
   list-style-type: none;
   display: flex;
-  position: absolute;
+  position: relative;
   right: 25px;
   top: 7%;
 }
@@ -71,6 +72,9 @@ body header > nav .bottom .nav_right > li > a {
 body header > nav .bottom .nav_right > li > a > img {
   width: 32px;
   height: 32px;
+}
+body header > nav .bottom .nav_right > div {
+  display: none;
 }
 body header > nav .bottom .nav_right > div > ol {
   list-style: none;
@@ -97,6 +101,9 @@ body header > nav .bottom .nav_right > div .menu1 {
   clear: both;
   background: beige;
   display: none;
+  position: absolute;
+  right: 20%;
+  top: 70%;
 }
 body header > nav .bottom .nav_right > div .menu1 li {
   padding: 5px;
@@ -152,7 +159,8 @@ footer .foot > center .p2 {
     display: none;
   }
   body header > nav .bottom .nav_right {
-    right: -35px;
+    z-index: 999;
+    right: -20px;
   }
   body header > nav .bottom .nav_right > li > a > img {
     width: 26px;
@@ -167,6 +175,10 @@ footer .foot > center .p2 {
   body header > nav .bottom .nav_right > div > label > img {
     width: 26px;
     height: 26px;
+  }
+  body header > nav .bottom .nav_right > div .menu1 {
+    right: 30%;
+    top: 110%;
   }
   main .contect {
     font-size: 12px;
@@ -258,4 +270,29 @@ main .place .address > div .map {
 main .place .address > div .map > a {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  main .banner {
+    height: 200px;
+  }
+  main .place > div > p {
+    font-size: 12px;
+    width: 20%;
+  }
+  main .place .address {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr); /* 创建3列，每列等分剩余空间 */
+    grid-gap: 15px; /* 列间距和行间距 */
+    margin: 0 20px 0 -70px;
+  }
+  main .place .address > div {
+    width: 100%;
+  }
+  main .place .address > div > div {
+    font-size: 14px;
+  }
+  main .place .address > div > p {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=shop.css.map */
