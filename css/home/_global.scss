@@ -13,17 +13,14 @@ body {
     }
 
     header {
-        // width: 100%;
         >nav {
             .top {
-                width: 101%;
                 height: 35px;
                 background-color: #8C1E1E;
             }
 
             .bottom {
                 z-index: 50;
-                width: 100%;
                 height: 50px;
                 background-color: white;
                 padding: 10px 0 10px 25px;
@@ -43,9 +40,9 @@ body {
                     display: flex;
                     flex-direction: row;
                     margin: 1%;
-                    width: 60%;
+                    width: 30%;
                     position: relative;
-                    // left: 30%;
+                    left: 0%;
 
                     .good {
                         // align-self: center;
@@ -156,7 +153,6 @@ body {
 main{
     .contect>p{
         color: #001D35;
-        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -166,7 +162,6 @@ footer{
     .foot{
         color: white;
         background-color: #8C1E1E;
-        width: 100%;
         height: auto;
         padding: 10px;
         >center{
@@ -188,9 +183,6 @@ footer{
     body{
         header{
             >nav{
-                .top{
-                    width: 106%;
-                }
                 .bottom{
                     >a>img{
                         width: 150px;

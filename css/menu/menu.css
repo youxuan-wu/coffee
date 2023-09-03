@@ -36,6 +36,7 @@ body header > nav .bottom .nav_left {
   margin: 1%;
   width: 60%;
   position: relative;
+  left: 0%;
 }
 body header > nav .bottom .nav_left .good:hover .menu {
   display: block;
@@ -60,8 +61,8 @@ body header > nav .bottom .nav_right {
   list-style-type: none;
   display: flex;
   position: absolute;
-  right: 25px;
-  top: 7%;
+  right: 8px;
+  top: 6%;
 }
 body header > nav .bottom .nav_right > li {
   margin-right: 10px;

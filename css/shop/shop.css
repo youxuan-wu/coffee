@@ -34,8 +34,9 @@ body header > nav .bottom .nav_left {
   display: flex;
   flex-direction: row;
   margin: 1%;
-  width: 60%;
+  width: 30%;
   position: relative;
+  left: 0%;
 }
 body header > nav .bottom .nav_left .good:hover .menu {
   display: block;
