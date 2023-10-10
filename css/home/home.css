@@ -258,10 +258,7 @@ main .box .photo .caption {
 
 @media (max-width: 768px) {
   header .swiper {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   header .swiper-slide img {
     display: block;
