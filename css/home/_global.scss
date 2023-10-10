@@ -194,7 +194,9 @@ footer{
                         display: none;
                     }
                     .nav_right{
-                        right:-20px;
+                        position: relative;
+                        top: 10px;
+                        right: 20px;
                         >li{
                             >a{
                                 >img{
@@ -205,6 +207,8 @@ footer{
                         }
                         >div{
                             display: block;
+                            width: 26px;
+                            height: 26px;
                             >label{
                                 display: flex;
                                 >img{
@@ -213,8 +217,9 @@ footer{
                                 }
                             }
                             .menu1{
-                                right: 30%;
+                                right: -15%;
                                 top: 110%;
+                                width: 120px;
                             }
                         }
                     }

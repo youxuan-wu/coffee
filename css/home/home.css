@@ -155,7 +155,9 @@ footer .foot > center .p2 {
     display: none;
   }
   body header > nav .bottom .nav_right {
-    right: -20px;
+    position: relative;
+    top: 10px;
+    right: 20px;
   }
   body header > nav .bottom .nav_right > li > a > img {
     width: 26px;
@@ -163,6 +165,8 @@ footer .foot > center .p2 {
   }
   body header > nav .bottom .nav_right > div {
     display: block;
+    width: 26px;
+    height: 26px;
   }
   body header > nav .bottom .nav_right > div > label {
     display: flex;
@@ -172,8 +176,9 @@ footer .foot > center .p2 {
     height: 26px;
   }
   body header > nav .bottom .nav_right > div .menu1 {
-    right: 30%;
+    right: -15%;
     top: 110%;
+    width: 120px;
   }
   main .contect {
     font-size: 12px;
